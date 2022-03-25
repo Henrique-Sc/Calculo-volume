@@ -21,18 +21,20 @@
 	</style>
 
 	<script>
-		
+		function volume() {
+			alt = parseFloat(document.getElementById('alt').value)
+		}
 	</script>
 </head>
 <body>
 	<h2>Exercício 05 - Calculo de volume</h2>
 
 	<form autocomplete="off">
-		<input type="number" placeholder="Altura" id="">
+		<input type="number" placeholder="Altura" id="alt">
         <br><br>
-        <input type="number" placeholder="Largura" id="">
+        <input type="number" placeholder="Largura" id="larg">
         <br><br>
-        <input type="number" placeholder="Profundidade" id="">
+        <input type="number" placeholder="Profundidade" id="profund">
 	</form>
     <br>
 	<button onclick="">Calcular</button>
