@@ -23,6 +23,8 @@
 	<script>
 		function volume() {
 			alt = parseFloat(document.getElementById('alt').value)
+
+			console(alt)
 		}
 	</script>
 </head>
@@ -37,7 +39,7 @@
         <input type="number" placeholder="Profundidade" id="profund">
 	</form>
     <br>
-	<button onclick="">Calcular</button>
+	<button onclick="volume()">Calcular</button>
 
 	<div id="result">
 		
