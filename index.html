@@ -23,20 +23,23 @@
 	<script>
 		function volume() {
 			alt = parseFloat(document.getElementById('alt').value)
+			larg = parseFloat(document.getElementById('larg').value)
+			profund = parseFloat(document.getElementById('profund').value)
 
-			console(alt)
+			console.log(alt)
 		}
 	</script>
 </head>
 <body>
 	<h2>Exercício 05 - Calculo de volume</h2>
 
+	<p>Digite em centímetros (cm)</p>
 	<form autocomplete="off">
-		<input type="number" placeholder="Altura" id="alt">
+		<input type="number" step="0.1" placeholder="Altura" id="alt">
         <br><br>
-        <input type="number" placeholder="Largura" id="larg">
+        <input type="number" step="0.1" placeholder="Largura" id="larg">
         <br><br>
-        <input type="number" placeholder="Profundidade" id="profund">
+        <input type="number" step="" placeholder="Profundidade" id="profund">
 	</form>
     <br>
 	<button onclick="volume()">Calcular</button>
